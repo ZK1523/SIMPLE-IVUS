@@ -1,0 +1,84 @@
+models:
+  unet:
+    encoder_name: resnet34
+    encoder_weights: imagenet
+    batch_size: 8
+  
+  transunet:
+    img_size: 512
+    patch_size: 32
+    use_pretrained: false
+    batch_size: 4
+  
+  attention_unet:
+    encoder_name: resnet34
+    encoder_weights: imagenet
+    batch_size: 6
+  
+  deeplabv3plus:
+    encoder_name: resnet101
+    encoder_weights: null
+    batch_size: 4
+  
+  segnet:
+    batch_size: 8
+  
+  unetplusplus:
+    encoder_name: resnet34
+    encoder_weights: imagenet
+    batch_size: 6
+  
+  unetr:
+    img_size: 512
+    patch_size: 32
+    batch_size: 4
+  
+  fcn:
+    encoder_name: resnet50
+    encoder_weights: imagenet
+    batch_size: 8
+  
+  pspnet:
+    encoder_name: resnet50
+    encoder_weights: imagenet
+    batch_size: 4
+  
+  linknet:
+    encoder_name: resnet34
+    encoder_weights: imagenet
+    batch_size: 8
+  
+  pan:
+    encoder_name: resnet34
+    encoder_weights: imagenet
+    batch_size: 8
+  
+  manet:
+    encoder_name: resnet34
+    encoder_weights: imagenet
+    batch_size: 6
+  
+  hrnet:
+    encoder_name: hrnet_w18
+    encoder_weights: imagenet
+    batch_size: 6
+  
+  ocrnet:
+    encoder_name: resnet101
+    encoder_weights: imagenet
+    batch_size: 2
+  
+  danet:
+    encoder_name: resnet50
+    encoder_weights: imagenet
+    batch_size: 4
+  
+  segformer:
+    img_size: 512
+    patch_size: 4
+    batch_size: 8
+  
+  medt:
+    encoder_name: efficientnet-b0
+    encoder_weights: imagenet
+    batch_size: 6
